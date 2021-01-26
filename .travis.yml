@@ -15,6 +15,13 @@ script:
   # la configuracion de travis tiene yarn
   - yarn build
 
+notifications:
+  email:
+    recipients:
+      - tubamar@hotmail.com
+    on_success: always
+    on_failure: always
+    
 deploy:
   provider: pages # github pages
   skip-clean: true
